@@ -10,6 +10,7 @@ export default function CartModal() {
         <div>Cart Is Empty</div>
       ) : (
         <>
+          <h2 className=" font-semibold mb-2">Shopping Cart</h2>
           <div className=" flex flex-col gap-8">
             {/* ITEM */}
             <div className=" flex gap-4">
@@ -48,13 +49,13 @@ export default function CartModal() {
               <span className="">$49</span>
             </div>
             <p className=" text-gray-500 text-sm mt-2 mb-4">
-              Shipping and taxes calculated at checkout .
+              Shipping and taxes calculated at checkout.
             </p>
             <div className=" flex justify-between text-sm">
               <button className="rounded-md py-3 px-4 ring-1 ring-gray-300">
                 View Cart
               </button>
-              <button className="rounded-md py-3 px-4 ring-1 ring-gray-300">
+              <button className="rounded-md py-3 px-4 bg-black text-white">
                 Checkout
               </button>
             </div>
