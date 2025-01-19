@@ -6,7 +6,7 @@ import NavIcons from "./NavIcons";
 
 export default function Navbar() {
   return (
-    <header className=" h-20 p-4 md:px-8 lg:px-16 xl:px-32  2xl:px-64 relative">
+    <header className=" h-20 px-4 md:px-8 lg:px-16 xl:px-32  2xl:px-64 relative">
       <div className=" flex justify-between items-center md:hidden">
         {/* MOBILE */}
         <Link href={"/"} className=" tracking-wide uppercase text-2xl ">
