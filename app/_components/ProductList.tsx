@@ -3,10 +3,10 @@ import Link from "next/link";
 
 export default function ProductList() {
   return (
-    <div className="flex gap-x-8 gap-y-16 justify-between flex-wrap">
+    <div className="flex gap-x-8 gap-y-16 justify-between flex-wrap mt-8">
       <Link
         href={"/test"}
-        className=" w-full flex flex-col gap-4 sm:w-[45%] lg:w-[22%] "
+        className=" w-full  flex flex-col gap-4 sm:w-[45%] lg:w-[22%] "
       >
         <div className="relative w-full h-80 aspect-square">
           <Image
