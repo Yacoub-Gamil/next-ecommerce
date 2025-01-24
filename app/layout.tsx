@@ -1,5 +1,6 @@
 import Footer from "./_components/Footer";
 import Navbar from "./_components/Navbar";
+import WixContextProvider from "./_context/WixContext";
 import "./globals.css";
 
 export default function RootLayout({
@@ -10,9 +11,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`antialiased`}>
-        <Navbar />
-        {children}
-        <Footer />
+        <WixContextProvider>
+          <Navbar />
+          {children}
+          <Footer />
+        </WixContextProvider>
       </body>
     </html>
   );

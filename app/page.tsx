@@ -1,8 +1,17 @@
+"use client";
 import CategoryList from "./_components/CategoryList";
 import ProductList from "./_components/ProductList";
 import Slider from "./_components/Slider";
+import { useWixCleint } from "./_hooks/useWixClient";
 
 export default function Home() {
+  const wixClient = useWixCleint();
+
+  async function getProduct() {
+    const items = await wixClient.products.queryProducts().find();
+    console.log(items);
+  }
+  getProduct();
   return (
     <div>
       <Slider />
